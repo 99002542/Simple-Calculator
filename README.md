@@ -7,3 +7,5 @@
 
 
 ![Unit testing](https://github.com/99002542/Simple-Calculator/workflows/Unit%20testing/badge.svg)
+
+![Valgrind](https://github.com/99002542/Simple-Calculator/workflows/Valgrind/badge.svg)
