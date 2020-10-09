@@ -68,11 +68,11 @@ int power(int operand1, int operand2);
 
 
 /**
-* get square root of operand1 and returns the result 
+* get cube root of operand1 and returns the result 
 * @param[in] operand1 
-* @return floating point value of the sqrt(operand1)
+* @return floating point value of the cbrt(operand1)
 */
-int squareroot(int operand1);
+int cuberoot(int operand1);
 
 
 /**
@@ -81,15 +81,7 @@ int squareroot(int operand1);
 * @return integer value of the operand1!
 * @note returns 1 for factorial of 0
 */
-int factorial(int operand1);
 
-
-/**
-* divides 1 by operand1 and returns the result 
-* @param[in] operand1 
-* @return flating point value of the 1 / operand2
-* @note returns 0 for divide by 0 error
-*/
 int inverse(int operand1);
 
 
@@ -98,23 +90,6 @@ int inverse(int operand1);
 * @param[in] operand1 
 * @return Result of operand1 * 74
 */
-int currency(int operand1);
-
-
-/**
-*  multiply the operand1 with 12 and returns the result
-* @param[in] operand1 
-* @return Result of operand1 * 12
-*/
-int length(int operand1);
-
-
-/**
-*  multiply the operand1 with 60 and returns the result
-* @param[in] operand1 
-* @return Result of operand1 * 60
-*/
-int time(int operand1);
 
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
