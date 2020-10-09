@@ -12,12 +12,8 @@ void test_multiply(void);
 void test_divide(void);
 void test_modulo(void);
 void test_power(void);
-void test_squareroot(void);
-void test_factorial(void);
+void test_cuberoot(void);
 void test_inverse(void);
-void test_currency(void);
-void test_length(void);
-void test_time(void);
 
 /* Start of the application test */
 int main() {
@@ -36,12 +32,9 @@ int main() {
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "modulo", test_modulo);
   CU_add_test(suite, "power", test_power);
-  CU_add_test(suite, "squareroot", test_squareroot);
-  CU_add_test(suite, "factorial", test_factorial);
+  CU_add_test(suite, "cuberoot", test_cuberoot);
   CU_add_test(suite, "inverse", test_inverse);
-  CU_add_test(suite, "currency", test_currency);
-  CU_add_test(suite, "length", test_length);
-  CU_add_test(suite, "time", test_time);
+ 
 
 
 /* Note: Do not edit START*/
@@ -100,19 +93,13 @@ void test_power(void) {
   CU_ASSERT(9 == power(3, 3));
 }
 
-void test_squareroot(void) {
-  CU_ASSERT(10 == squareroot(100));
+void test_cuberoot(void) {
+  CU_ASSERT(10 == cuberoot(100));
   
   /* Dummy fail*/
-  CU_ASSERT(3 == squareroot(25));
+  CU_ASSERT(3 == cuberoot(25));
 }
 
-void test_factorial(void) {
-  CU_ASSERT(120 == factorial(5));
-  
-  /* Dummy fail*/
-  CU_ASSERT(10== factorial(3));
-}
 
 void test_inverse(void) {
   CU_ASSERT(1== inverse(1));
@@ -121,23 +108,4 @@ void test_inverse(void) {
   CU_ASSERT(2==inverse(3));
 }
 
-void test_currency(void) {
-  CU_ASSERT(74== currency(1));
-  
-  /* Dummy fail*/
-  CU_ASSERT(100==currency(3));
-}
 
-void test_length(void) {
-  CU_ASSERT(24== length(2));
-  
-  /* Dummy fail*/
-  CU_ASSERT(30==length(3));
-}
-
-void test_time(void) {
-  CU_ASSERT(120== time(2));
-  
-  /* Dummy fail*/
-  CU_ASSERT(130==time(3));
-}
