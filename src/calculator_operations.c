@@ -41,20 +41,11 @@ int power(int operand1, int operand2)
         return pow(operand1,operand2);
 }
 
-int squareroot(int operand1)
+int cuberoot(int operand1)
 {
-    return sqrt(operand1);
+    return cbrt(operand1);
 }
 
-int factorial(int operand1)
-{
-    int i,fact=1;
-    for(i=1;i<=operand1;i++)
-    {
-        fact=fact*i;
-    }
-    return fact;
-}
 
 int inverse(int operand1)
 {
@@ -64,17 +55,3 @@ int inverse(int operand1)
         return 1 / operand1;
 }
 
-int currency(int operand1)
-{
-    return operand1 * 74;
-}
-
-int length(int operand1)
-{
-    return operand1 * 12;
-}
-
-int time(int operand1)
-{
-    return operand1 * 60;
-}
